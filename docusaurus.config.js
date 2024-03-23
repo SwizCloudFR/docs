@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'SwizCloud Docs',
   tagline: 'Accédez à la documentation et aux tutoriels pour vous accompagner dans le déploiement et l\'usage de nos solutions.',
   favicon: 'https://cdn.swizcloud.fr/images/brand/logo.webp',
 
