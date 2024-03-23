@@ -32,8 +32,19 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'fr',
-    locales: ['en', 'fr'],
+    locales: ['fr'],
   },
+
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["en", "fr"],
+      }),
+    ],
+  ],
 
   presets: [
     [
@@ -84,11 +95,6 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
           },
-          {
-            href: 'https://github.com/SwizCloudFR/docs',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -117,15 +123,15 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Plus',
             items: [
+              {
+                label: 'SwizCloud.fr',
+                to: 'https://swizcloud.fr',
+              },
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/SwizCloudFR/docs',
               },
             ],
           },
